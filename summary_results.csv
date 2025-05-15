@@ -1,0 +1,4 @@
+File,Avg Latency (s),Avg Energy (J),Cache Hit,MIP Success,Throughput
+synthetic_telemetry.csv,7.526,0.398133,0.14,0.04,1.0
+synthetic_telemetry_lowmob.csv,7.181,0.293832,1.0,0.04,1.0
+synthetic_telemetry_highload.csv,30.034,1.202083,1.0,0.0,1.0
