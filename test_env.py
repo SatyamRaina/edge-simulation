@@ -1,12 +1,14 @@
 from edge_env import EdgeEnv
 
 env = EdgeEnv()
-obs = env.reset()
+obs, _ = env.reset()
+
 print("Initial observation:", obs)
 
 action = env.action_space.sample()
-obs, reward, done, info = env.step(action)
+next_obs, reward, terminated, truncated, info = env.step(action)
+done = terminated or truncated
 
-print("Next observation:", obs)
+print("Next observation:", next_obs)
 print("Reward:", reward)
 print("Done:", done)
